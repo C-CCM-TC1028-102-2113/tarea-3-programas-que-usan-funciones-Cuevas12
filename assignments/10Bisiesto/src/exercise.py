@@ -1,18 +1,18 @@
 def es_bisiesto(año):
     if año % 400 == 0:
-        print('True', es_bisiesto(año))
+        return True
     elif año % 100 == 0:
-        print ('False', es_bisiesto(año))
+        return False
     elif año % 4 == 0:
-        print ('True', es_bisiesto(año))
+        return True
     else:
-        print ('False', es_bisiesto(año))
-    return es_bisiesto(año)
+        return False 
 
 def main():
-    año=float(input(''))
-    print(str(es_bisiesto(año)))
+    #escribe tu código abajo de esta línea
+    año= float(input())
+    esbisiesto= es_bisiesto(año)
+    print(esbisiesto)
     
-
-    if __name__ == '__main__':
-        main()
+if __name__ == '__main__':
+    main()
